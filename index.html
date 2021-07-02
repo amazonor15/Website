@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+ 
+<style id="jsbin-css">
+h1{
+  color:green;
+  font-family:monospace
+}
+
+.background{
+ // background-color: white;
+ 
+  font-family:Cursive
+}
+
+h3{color:blue;
+  font-family:Fantasy
+}
+
+.hobbies{
+  font-family:Cursive
+}
+
+p{
+  font-family:monospace
+}
+
+.hidden{
+  display: none;
+}
+</style>
+</head>
+<body>
+ <h1> Welcome to my page!  </h1>
+  
+  <p> This is the first time ever creating a page on my own. Im sure its easy but only if you know. 
+    Lets go through this togetehr and enjoy our time. Most import is to have fun.
+  
+  </p>
+  
+  <div class="background">
+    
+  <h3 id="header2">General things about me: </h3>
+  
+    <div>
+     <ul>
+       <li> Im 5'10" tall</li>
+       <li> I have long hair</li>
+       <li>I walk fast</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="hobbies">
+    <h3 id="header3">My Hobbies Includes:</h3>
+    <ol>
+      <li>I love skiing</li>
+      <li>I enjoy horseback riding</li>
+      <li>Hiking in the mointains</li>
+      <li></li>
+    </ol>
+  </div>
+  
+<script id="jsbin-javascript">
+console.clear();
+const h2 = document.getElementById ('header2');
+const h3 = document.getElementById('header3');
+
+//console.log('h');
+
+h3.addEventListener('click',function(){
+  h2.classList.toggle('hidden');
+})
+</script>
+
+
+</body>
+</html>
